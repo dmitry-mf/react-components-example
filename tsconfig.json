@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      
+      "strict": true,
+      "esModuleInterop": true,
+      "sourceMap": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "isolatedModules": true,
+      "skipLibCheck": true,
+      "pretty": true,
+
+      "moduleResolution": "node",
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "es6",
+      "target": "es6",
+      "jsx": "react",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "baseUrl": "./",
+      "paths": {
+        "@components/*": ["src/components/*"],
+        "@assets/*": ["src/assets/*"],
+        "@pages/*": ["src/pages/*"],
+        "@styles/*": ["src/styles/*"],
+        "@hooks/*": ["src/hooks/*"],
+        "@context/*": ["src/context/*"],
+        "@store/*": ["src/store/*"],
+      }
+    },
+    "include": [
+      "src/**/*",
+      "./types/**/*.d.ts"
+    ],
+    "exclude": ["node_modules", "dist"]
+  }
